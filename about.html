@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+    <meta charset="UTF-8">
+    <title>Bookstore - About</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            border-radius: 10px;
+            background-image: url('background.jfif');
+        }
+        header, footer {
+            background-color: grey;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 10px;
+            border: solid 1px black;
+        }
+        nav {
+            background-color: navy;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .animated-list p {
+            animation: fadeIn 1s ease-in-out;
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
+        .animated-list p:nth-child(1) { animation-delay: 0.5s; }
+        .animated-list p:nth-child(2) { animation-delay: 1s; }
+        .animated-list p:nth-child(3) { animation-delay: 1.5s; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="cataloge.html">catalog</a> |
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <main>
+        <h2 style="border: solid 3px black; background: white; text-align: center;">We are a bookstore dedicated to providing the best literary experiences. From fiction to science, we have it all.</h2>
+        <br><br>
+        <video width="500" height="400" style="border: solid 3px black; background: gray;" controls>
+    <source src="books.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+        <div class="animated-list" style="border: solid 3px black; background: white; text-align: center; font-size: 150%; padding: 20px;">
+            <p>MADE BY:</p>
+            <p>- JASEM MOHAMED 56J23138</p>
+            <p>- MOHAMMED IBRAHIM 52J2394</p>
+            <p>- FAISAL MAHMOOD 52J23149</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Our Bookstore</p>
+    </footer>
+</body>
+</html>

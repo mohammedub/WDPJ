@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookstore - Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            border-radius: 10px;
+            background-image: url('background.jfif');
+        }
+        header, footer {
+            background-color: grey;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 10px;
+            border: solid 1px black;
+        }
+        nav {
+            background-color: navy;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        form {
+            margin: 20px auto;
+            width: 300px;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("8gI3XT634Nt8EXmSh");
+       })();
+    </script>
+    <script src="Script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="cataloge.html">Catalog</a> |
+    </nav>
+    <main>
+        <form onsubmit="sendMail(event)">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Our Bookstore</p>
+    </footer>
+</body>
+</html>
